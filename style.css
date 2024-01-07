@@ -129,7 +129,7 @@
             padding: 10px;
             border: 1px solid #222d34;
             border-radius: 20px;
-            position: absolute;
+            position: relative;
             z-index: 2;
         }
         
