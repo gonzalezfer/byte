@@ -83,6 +83,7 @@
         #menu-container {
             display: flex;
             position: sticky;
+            z-index: 5;
             top: 0;
             left: 0;
             right: 0;
@@ -128,7 +129,8 @@
             padding: 10px;
             border: 1px solid #222d34;
             border-radius: 20px;
-            position: relative;
+            position: absolute;
+            z-index: 2;
         }
         
         .grupo img {
