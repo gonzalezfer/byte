@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: black;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    border-bottom: 1px solid #1c1d21;
+    padding: 15px;
+    background: black;
+    font-variant-caps: all-petite-caps;
+}
+
+/* Resto de estilos permanecen sin cambios */
+
+#chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+#chat-history {
+  overflow-y: auto;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+}
+
+.user-message {
+  background: transparent;
+  color: white;
+  display: flex;
+  justify-content: flex-end; /* Move user messages to the right */
+}
+
+.bot-message {
+  border-radius: 20px 20px;
+  padding: 0px 10px;
+  color: white;
+  display: flex;
+  justify-content: flex-start; /* Move bot messages to the left */
+}
+
+.user-message, .bot-message {
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.user-message img {
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+}
+
+.user-message p {
+    margin-right: 5px;
+    font-size: 13px;
+    border: 1px solid #26272d;
+    padding: 13px;
+    border-radius: 20px;
+}
+
+.bot-message img {
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+}
+
+.bot-message p {
+    margin-left: 5px;
+    padding: 13px;
+    font-size: 13px;
+    border-radius: 20px;
+    background: #151724;
+    white-space: pre-line;
+}
+
+.bot-message p pre {
+    background: black;
+    color: white;
+    border-radius: 10px;
+    width: 20px;
+    overflow: hidden;
+}
+
+#input-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+  background: transparent;
+  border: 1px solid #1e2024;  
+  border-radius: 40px;
+}
+
+#input-container button {
+    background: white;
+    color: black;
+    border-radius: 20px;
+    border: none;
+    width: 35px;
+    height: 35px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#input-container button:active {
+    opacity: 0.8;
+}
+
+#input-container button:disabled {
+    background: transparent;
+    color: gray;
+}
+
+input {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  color: white;
+  background: transparent;
+  outline: none;
+}
+
+nav button {
+  background: transparent;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: progress;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav button:hover {
+  background: #111113;
+}
