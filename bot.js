@@ -1,7 +1,7 @@
 const apiKey = process.env.API_KEY;
 const apiP = document.createElement('p');
 apiP.style.color = 'white';
-apiP.textContent = apiKey;
+apiP.textContent = 'Tu ApiKEY:' + apiKey;
 const apiUrl = 'https://api.openai.com/v1/chat/completions';
 
 // Variable para almacenar el historial del chat
