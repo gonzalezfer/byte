@@ -1,4 +1,4 @@
-const apiKey = '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';
+const apiKey = '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';
 const apiUrl = 'https://api.openai.com/v1/chat/completions';
 
 // Variable para almacenar el historial del chat
@@ -43,6 +43,7 @@ async function sendMessageToGPT(userInput) {
       headers: {
         'Content-Type': 'application/json',
         'Authorization': `Bearer ${apiKey}`,
+        'OpenAI-Organization: org-HtXv6FrIFRtkyuV630dnN6ox',
       },
       body: JSON.stringify(prompt),
     });
