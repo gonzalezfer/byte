@@ -43,7 +43,6 @@ async function sendMessageToGPT(userInput) {
       headers: {
         'Content-Type': 'application/json',
         'Authorization': `Bearer ${apiKey}`,
-        'OpenAI-Organization: org-HtXv6FrIFRtkyuV630dnN6ox',
       },
       body: JSON.stringify(prompt),
     });
