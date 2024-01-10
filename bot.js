@@ -30,7 +30,7 @@ async function sendMessageToGPT(userInput) {
 
   // Construir el objeto prompt con el historial completo
   const prompt = {
-    model: "gpt-3.5-turbo-1106",
+    model: "gpt-3.5-turbo",
     messages: [
       { role: "system", content: "You are a helpful assistant." },
       ...chatHistoryData  // Incluye todo el historial de la conversación
