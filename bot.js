@@ -2,6 +2,7 @@ const apiKey = process.env.API_KEY;
 const apiP = document.createElement('p');
 apiP.style.color = 'white';
 apiP.textContent = 'Tu ApiKEY:' + apiKey;
+consolé.log(apiP);
 const apiUrl = 'https://api.openai.com/v1/chat/completions';
 
 // Variable para almacenar el historial del chat
@@ -103,7 +104,6 @@ function addUserMessage(message) {
   userMessage.appendChild(userTag);
 
   chatHistory.appendChild(userMessage);
-  chatHistory.appendChild(apiP);
 }
 
 function addBotMessage(message) {
