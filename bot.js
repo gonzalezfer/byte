@@ -1,4 +1,4 @@
-const apiKey = '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';
+const apiKey = process.env.API_KEY;
 const apiUrl = 'https://api.openai.com/v1/chat/completions';
 
 // Variable para almacenar el historial del chat
