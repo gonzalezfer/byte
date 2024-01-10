@@ -1,4 +1,4 @@
-const apiKey = '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';
+const apiKey = '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';
 const apiUrl = 'https://api.openai.com/v1/chat/completions';
 
 // Variable para almacenar el historial del chat
@@ -30,7 +30,7 @@ async function sendMessageToGPT(userInput) {
 
   // Construir el objeto prompt con el historial completo
   const prompt = {
-    model: "gpt-3.5",
+    model: "gpt-3.5-turbo",
     messages: [
       { role: "system", content: "You are a helpful assistant." },
       ...chatHistoryData  // Incluye todo el historial de la conversación
