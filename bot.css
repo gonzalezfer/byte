@@ -100,11 +100,11 @@ nav {
   align-items: center;
   padding: 10px;
   margin: 10px;
-  background: transparent;
+  background: black;
   border: 1px solid #1e2024;  
   border-radius: 40px;
   position: sticky;
-  bottom: 0;
+  bottom: 10px;
 }
 
 #input-container button {
